@@ -1,4 +1,8 @@
 /* Buttons */
+.pure-button {
+    padding: .3em 1em;
+    background: #ddd;
+}
 .pure-form .pure-button-small,
 .pure-button-small {
     font-size: 85%;
@@ -9,7 +13,7 @@
 }
 .pure-button-error {
     background-color: red;
-    color: white
+    color: white;
     -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
        -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
         -ms-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
@@ -23,6 +27,10 @@ a.pure-button {
 
 .no-select.pure-button {
     cursor: default;
+}
+
+.pure-button-hidden {
+    display: none;
 }
 
 

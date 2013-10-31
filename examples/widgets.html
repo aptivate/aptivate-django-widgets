@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example page</title>
+    <style>
+body {
+    padding: 1em 3em;
+    font-family: sans-serif;
+}
+body > div {
+    margin-bottom: 2em;
+}
+    </style>
+    <link rel="stylesheet" href="../aptivate_widgets/static/css/pure.css" />
+    <link rel="stylesheet" href="../aptivate_widgets/static/css/widgets.css" />
+</head>
+<body>
+    <!-- Better file image -->
+    <h4>BetterFileImage</h4>
+    <div>
+        <span class="field-clear">
+            <span class="field-clear-initial"><img src="test.jpg" alt="Leaves" /></span>
+            <br />
+            <script>document.write('<span class="field-clear-check-button pure-button pure-button-xsmall pure-button-error">Remove</span><span class="field-clear-cancel pure-button-xsmall pure-button pure-button-hidden">Cancel</span>')</script>
+            <p class="browse-box"><input id="id_picture" name="picture" type="file" /></p>
+
+            <noscript>
+        <label for="picture-clear_id" class="field-clear-check">
+            Remove file: <input id="picture-clear_id" name="picture-clear" type="checkbox" /> (tick and save)
+        </label></noscript>
+            <script>document.write('<span class="field-clear-hidden-input pure-button pure-button-xsmall pure-button-hidden"><input id="picture-clear_id" name="picture-clear" type="checkbox" /></span>')</script>
+        </span>
+    </div>
+
+    <!-- Better file input -->
+    <h4>BetterFileInput</h4>
+    <div class="pure-control-group">
+        <span class="field-clear">
+            <span class="field-clear-initial"><a href="test.jpg">test.jpg</a></span>
+            <script>document.write('<span class="field-clear-check-button pure-button pure-button-xsmall pure-button-error">Remove</span><span class="field-clear-cancel pure-button-xsmall pure-button pure-button-hidden">Cancel</span>')</script>
+            <p class="browse-box"><input id="id_cv" name="cv" type="file" /></p>
+            <noscript>
+        <label for="cv-clear_id" class="field-clear-check">
+            Remove file: <input id="cv-clear_id" name="cv-clear" type="checkbox" /> (tick and save)
+        </label></noscript>
+            <script>document.write('<p class="field-clear-hidden-input pure-button-hidden"><input id="cv-clear_id" name="cv-clear" type="checkbox" /></p>')</script>
+        </span>
+    </div>
+
+    <!-- BetterSelectMultiple -->
+    <h4>BetterSelectMultiple</h4>
+    <div class="pure-control-group">
+        <label>
+            <span class="help-text">Hold down "Control", or "Command" on a Mac, to select more than one.</span>
+        </label>
+        <select name="students" multiple="multiple" data-add="&amp;darr; Assign" data-remove="&amp;uarr; Unassign" class="widget-multi-select" id="id_students" size="5">
+            <option value="5">Judy</option>
+            <option value="3" selected="selected">Jill</option>
+            <option value="4" selected="selected">John</option>
+            <option value="6">James</option>
+        </select>
+    </div>
+
+    <!-- TextareaWordLimit -->
+    <h4>TextareaWordLimit</h4>
+    <div class="pure-control-group">
+        <label>
+            <span class="required">Enter some data</span>
+        </label>
+        <br />
+        <textarea class="input-word-limit" cols="40" data-word-limit="10" name="text" rows="10"></textarea>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../aptivate_widgets/static/js/mjp/mjp.min.js"></script>
+    <script src="../aptivate_widgets/static/js/better_file_input.js"></script>
+    <script src="../aptivate_widgets/static/js/multi_select.js"></script>
+    <script src="../aptivate_widgets/static/js/word_limit.js"></script>
+</body>
+</html>
