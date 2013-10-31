@@ -1,0 +1,138 @@
+/* Buttons */
+.pure-form .pure-button-small,
+.pure-button-small {
+    font-size: 85%;
+}
+.pure-form .pure-button-xsmall,
+.pure-button-xsmall {
+    font-size: 70%;
+}
+.pure-button-error {
+    background-color: red;
+    color: white
+    -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+       -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        -ms-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+         -o-text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+a.pure-button {
+    color: black;
+}
+
+.no-select.pure-button {
+    cursor: default;
+}
+
+
+
+/*
+ * Enhanced multi select
+ */
+.wrap-multi-select {
+    display: inline-block;
+    width: 23em;
+}
+.wrap-multi-select > select {
+    width: 100%;
+    margin-bottom: 1em;
+}
+.multi-select-controls {
+    display: inline-block;
+    width: 20em; /* To match <select> where font-size is .8em */
+    text-align: center;
+}
+.multi-select-controls [type=button] {
+    margin: 0 1em 1em;
+}
+
+
+
+/*
+* Word limit
+*/
+.widget-word-limit {
+    display: inline-block;
+    width: 23em;
+}
+.widget-word-limit > input,
+.widget-word-limit > textarea,
+.widget-word-limit > .counter {
+    width: 100%;
+}
+.widget-word-limit > .counter {
+    display: inline-block;
+    text-align: right;
+    font-size: 85%;
+}
+.over-limit > input,
+.over-limit > input:focus,
+.over-limit > textarea,
+.over-limit > textarea:focus {
+    color: red;
+    border-color: red;
+}
+.over-limit .counter {
+    color: red;
+}
+
+
+
+/*
+* File input
+*/
+.field-clear {
+    display: inline-block;
+    line-height: 1.5;
+}
+.pure-form-aligned .pure-control-group .field-clear-check {
+    text-align: left;
+}
+
+a.deleted {
+	color: red;
+	text-decoration: line-through;
+}
+
+.browse-box {
+    display: inline;
+    font-size: 85%;
+}
+/* Image input */
+.field-clear img.deleted {
+    opacity: .4;
+    -webkit-transition: opacity .3s;
+       -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+         -o-transition: opacity .3s;
+            transition: opacity .3s;
+}
+.field-clear img {
+    -webkit-transition: opacity .3s;
+       -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+         -o-transition: opacity .3s;
+            transition: opacity .3s;
+}
+
+
+
+/*
+ * Remote submit
+ */
+.remote-submit {
+    display: none;
+}
+.remote-submit.show {
+    display: inline-block;
+}
+
+
+
+/* 
+ * Year Month Date Selector
+ */
+.pure-form .year-month-date-selector {
+    display: inline-block;
+}

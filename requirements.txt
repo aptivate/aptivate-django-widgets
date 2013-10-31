@@ -1,0 +1,10 @@
+django>1.5
+django-floppyforms==1.1
+django-form-utils==1.0
+
+
+# Running tests
+#pytest==2.4.2
+#pytest-django==2.3.0
+#pytest-cov==1.6
+#mock==1.0.1
